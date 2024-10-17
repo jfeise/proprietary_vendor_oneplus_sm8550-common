@@ -1058,8 +1058,111 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/camera/imx709.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx709.pb
 
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    android.hardware.bluetooth.audio-impl-qti \
+    audio.primary.kalama \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vulkan.adreno \
+    libCB \
+    libOpenCL \
+    libPeripheralStateUtils \
+    libQcelp13SwCodec \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libagm \
+    libar-acdb \
+    libar-gpr \
+    libar-gsl \
+    libar-pal \
+    libats \
+    libbluetooth_audio_session_aidl_qti \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libcapiv2svacnnvendor \
+    libcapiv2svarnnvendor \
+    libcapiv2udk7vendor \
+    libcapiv2uvvendor \
+    libcdsp_default_listener \
+    libcdsprpc \
+    libgpudataproducer \
+    libgsl \
+    libkcl \
+    libkernelmanager \
+    liblistensoundmodel2vendor \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
+    liblx-ar_util \
+    liblx-osal \
+    libmcs \
+    libmdsprpc \
+    libperfconfig \
+    libperfgluelayer \
+    libperfioctl \
+    libqc2audio_base \
+    libqc2audio_basecodec \
+    libqc2audio_core \
+    libqc2audio_hooks \
+    libqc2audio_platform \
+    libqc2audio_swaudiocodec \
+    libqc2audio_utils \
+    libqc2colorconvertfilter \
+    libqc2filter \
+    libqc2vppfilter \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_cvpfilter \
+    libqcodec2_filterbase \
+    libqcodec2_hooks \
+    libqcodec2_imgtxrfilter \
+    libqcodec2_mockfilter \
+    libqcodec2_mockqc2filter \
+    libqcodec2_platform \
+    libqcodec2_streaminteg_filter \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    libqconfigclient \
+    libqti-iopd-client \
+    libqti-iopd \
+    libqti-perfd-client \
+    libqti-perfd \
+    libqti-util \
+    libqti-utils \
+    libqtigefar \
+    libsdsprpc \
+    libvideooptfeature \
+    libvideotxr \
+    libvideoutils \
+    libvmmem \
+    qti.video.utils.videobufferlayout \
+    vendor.qti.hardware.AGMIPC@1.0-impl \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.iop@1.0 \
+    vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.pal@1.0-impl \
+    vendor.qti.hardware.power.powermodule@1.0 \
+    vendor.qti.hardware.qconfig@1.0 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
+    libfmpal \
+    libhfp_pal \
+    libstreamparser \
+    android.hardware.secure_element@1.0-impl \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.gt24p64b_imx688 \
     com.qti.eeprom.irs2381c_polar \
@@ -1175,38 +1278,22 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libVkLayer_ADRENO_qprofiler \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    audio.primary.kalama \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.offline \
     com.qti.chi.override \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.hardware.alarm@1.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.bttpi-impl \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    vulkan.adreno \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
@@ -1220,7 +1307,6 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     libAlacSwDec \
     libApeSwDec \
-    libCB \
     libEvrcSwCodec \
     libFileMux_proprietary \
     libFlacSwDec \
@@ -1229,12 +1315,9 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libOpenCL \
     libPanelChaplin \
-    libPeripheralStateUtils \
     libQSEEComAPI \
     libQTEEConnector_vendor \
-    libQcelp13SwCodec \
     libQnnCpu_vendor \
     libQnnHtp_vendor \
     libQnnHtpPrepare_vendor \
@@ -1248,32 +1331,21 @@ PRODUCT_PACKAGES += \
     lib_bt_bundle \
     libadaptlaunch \
     libadm \
-    libadreno_app_profiles \
-    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
     libaidenoiser \
     libaidenoiserv2 \
     libaodoptfeature \
     libapengine \
     libappclassifier \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
-    libats \
     libaudio_log_utils \
     libbacklight-calib \
     libbatching \
     libbitmlengine \
     libbitmlenginev2 \
-    libbluetooth_audio_session_aidl_qti \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
     libbtnv \
     libcacertclient \
@@ -1293,14 +1365,8 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
-    libcapiv2svacnnvendor \
-    libcapiv2svarnnvendor \
-    libcapiv2udk7vendor \
-    libcapiv2uvvendor \
     libcdfw \
     libcdfw_remote_api \
-    libcdsp_default_listener \
-    libcdsprpc \
     libchifeature2 \
     libchilog \
     libclstc_algorithm_adapter \
@@ -1349,8 +1415,6 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
-    libgpudataproducer \
-    libgsl \
     libhdr10plus \
     libhdr_backlight_adapter \
     libhdr_stub \
@@ -1370,18 +1434,12 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libjpege \
-    libkcl \
-    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
     liblearningmodule \
     liblightninglaunches \
-    liblistensoundmodel2vendor \
-    libllvm-glnext \
-    libllvm-qcom \
-    libllvm-qgl \
     liblmthermallistner \
     liblmutils-ns \
     libloadalgo_stub \
@@ -1402,13 +1460,9 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
     libmasc \
-    libmcs \
     libmctfengine_stub \
     libmdmdetect \
-    libmdsprpc \
     libmemperfd \
     libmemutils \
     libmeters-ns \
@@ -1450,9 +1504,6 @@ PRODUCT_PACKAGES += \
     libpal_net_if \
     libpdmapper \
     libpdnotifier \
-    libperfconfig \
-    libperfgluelayer \
-    libperfioctl \
     libperipheral_client \
     libpowercore \
     libprefapps \
@@ -1464,36 +1515,12 @@ PRODUCT_PACKAGES += \
     libpwirishal \
     libpwirishalwrapper \
     libqapesdk \
-    libqc2audio_base \
-    libqc2audio_basecodec \
-    libqc2audio_core \
-    libqc2audio_hooks \
     libqc2audio_hwaudiocodec \
-    libqc2audio_platform \
-    libqc2audio_swaudiocodec \
-    libqc2audio_utils \
-    libqc2colorconvertfilter \
-    libqc2filter \
-    libqc2vppfilter \
     libqcbor \
     libqcc_file_agent \
     libqcc_sdk \
     libqcci_legacy \
     libqcmaputils \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_cvpfilter \
-    libqcodec2_filterbase \
-    libqcodec2_hooks \
-    libqcodec2_imgtxrfilter \
-    libqcodec2_mockfilter \
-    libqcodec2_mockqc2filter \
-    libqcodec2_platform \
-    libqcodec2_streaminteg_filter \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
-    libqconfigclient \
     libqcrilDataModule \
     libqcrilNr \
     libqcrilNrCellInfoModule \
@@ -1541,14 +1568,7 @@ PRODUCT_PACKAGES += \
     libqsegnet \
     libqshcamera \
     libqsocket \
-    libqti-iopd-client \
-    libqti-iopd \
-    libqti-perfd-client \
-    libqti-perfd \
     libqti-qesdk-secure \
-    libqti-util \
-    libqti-utils \
-    libqtigefar \
     libqtikeymaster4 \
     libqtikeymint \
     librcc \
@@ -1573,7 +1593,6 @@ PRODUCT_PACKAGES += \
     libsdmdal \
     libsdmextension \
     libsdmutils \
-    libsdsprpc \
     libsensorcal \
     libsensorslog \
     libsfeShiftExtrapolation \
@@ -1602,7 +1621,6 @@ PRODUCT_PACKAGES += \
     libssc_default_listener \
     libssd \
     libstandbyfeature \
-    libstreamparser \
     libswregistrationalgo \
     libsynergy_loc_api \
     libsynx \
@@ -1616,11 +1634,7 @@ PRODUCT_PACKAGES += \
     libtinyxml2_1 \
     libubifocus \
     libvideoml \
-    libvideooptfeature \
-    libvideotxr \
-    libvideoutils \
     libvmfilexfer \
-    libvmmem \
     libvppclient \
     libvppcommon \
     libvpphcp \
@@ -1671,7 +1685,6 @@ PRODUCT_PACKAGES += \
     qcrilNr_aidl_common \
     qcrild_libqcrilnr \
     qcrild_libqcrilnrutils \
-    qti.video.utils.videobufferlayout \
     qtiPeripheralMgr \
     qtiril-utils \
     qtiwakelock \
@@ -1725,12 +1738,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1 \
     vendor.qti.gnss-V2-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bttpi-V2-ndk \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
@@ -1757,26 +1767,20 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dpmservice@1.0_vendor \
     vendor.qti.hardware.dpmservice@1.1 \
-    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.embmssl@1.0 \
     vendor.qti.hardware.embmssl@1.1 \
     vendor.qti.hardware.factory@1.0 \
     vendor.qti.hardware.factory@1.1 \
     vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.iop@1.0 \
-    vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.limits@1.0 \
     vendor.qti.hardware.limits@1.1 \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.pal@1.0-impl \
-    vendor.qti.hardware.power.powermodule@1.0 \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
     vendor.qti.hardware.qccvndhal@1.0_vendor \
-    vendor.qti.hardware.qconfig@1.0 \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
@@ -1854,8 +1858,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
-    vendor.qti.memory.pasrmanager@1.0 \
-    vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.power.pasrmanager@1.0 \
     vendor.qti.qesdhal@1.0 \
     vendor.qti.qesdhal@1.1 \
@@ -1933,6 +1935,29 @@ PRODUCT_PACKAGES += \
     libvpp_vqa_networks \
     nearby.napp_header \
     nearby \
+    libmmosal \
+    libmmparser_lite \
+    libmmrtpdecoder \
+    libmmrtpencoder \
+    libwfdavenhancements \
+    libwfdclient \
+    libwfdcommonutils \
+    libwfdconfigutils \
+    libwfddisplayconfig \
+    libwfdmminterface \
+    libwfdmmsink \
+    libwfdmmsrc_system \
+    libwfdrtsp \
+    libwfdservice \
+    libwfdsinksm \
+    libwfduibcinterface \
+    libwfduibcsink \
+    libwfduibcsinkinterface \
+    libwfduibcsrc \
+    libwfduibcsrcinterface \
+    vendor.qti.diaghal@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
+    com.qualcomm.qti.wifidisplayhal@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1945,33 +1970,12 @@ PRODUCT_PACKAGES += \
     libdpmtcm \
     libimscamera_jni \
     libimsmedia_jni \
-    libmmosal \
-    libmmparser_lite \
-    libmmrtpdecoder \
-    libmmrtpencoder \
     libqcc \
     libqcc_file_agent_sys \
     libqccdme \
     libqccfileservice \
-    libwfdavenhancements \
-    libwfdclient \
-    libwfdcommonutils \
-    libwfdconfigutils \
-    libwfddisplayconfig \
-    libwfdmminterface \
-    libwfdmmsink \
-    libwfdmmsrc_system \
     libwfdnative \
-    libwfdrtsp \
-    libwfdservice \
-    libwfdsinksm \
-    libwfduibcinterface \
-    libwfduibcsink \
-    libwfduibcsinkinterface \
-    libwfduibcsrc \
-    libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
-    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
@@ -1979,10 +1983,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2-halimpl \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    libc2ffmpegutils \
+    libc2filterplugin \
+    libosie_process \
+    libosie_stub \
+    vendor.oplus.hardware.extcamera@1.0 \
     libQnnHtp.aiboost \
     libQnnHtpPrepare.aiboost \
     libQnnHtpV73Stub.aiboost \
@@ -2484,6 +2492,7 @@ PRODUCT_PACKAGES += \
     shsusrd \
     slim_daemon \
     sscrpcd \
+    ssgqmigd \
     ssgqmigd64 \
     ssgtzd \
     system_dlkm_modprobe \
